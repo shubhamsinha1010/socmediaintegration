@@ -1,0 +1,42 @@
+{% extends "User/base.html" %}
+{% block content %}
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Social Media Integration</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form method="POST">
+					{% csrf_token %}
+					{{form.username.label}}
+					<div>{{form.username}}</div>
+					{{form.email.label}}
+					<div>{{form.email}}</div>
+					{{form.password1.label}}
+					<div>{{form.password1}}</div>
+					{{form.password2.label}}
+					<div>{{form.password2}}</div>
+					<input type="submit" value="SIGNUP">
+
+				</form>
+				{{form.errors}}
+				<p>Already have an Account? <a href="{% url 'user-login' %}"> Login Now!</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+{% endblock content %}
