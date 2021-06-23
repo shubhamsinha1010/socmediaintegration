@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_on_heroku
 from pathlib import Path
 
 
@@ -169,3 +170,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sinhashubham1911@gmail.com'
 EMAIL_HOST_PASSWORD = 'University@2020'
 
+django_on_heroku.settings(locals())
