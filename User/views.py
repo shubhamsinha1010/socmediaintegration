@@ -1,10 +1,11 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
-from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm
+from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm
 from .models import Profile,UserNew,gmailNew
 from django.conf import settings
 from django.core.mail import send_mail
+
 from django.contrib import messages
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
@@ -141,3 +142,14 @@ def gmailus(request):
 @login_required
 def facebookus(request):
     return render(request,'User/userfacebook.html')
+
+@login_required
+def oxford(request):
+    search_result = {}
+    if 'word' in request.GET:
+        form = DictionaryForm(request.GET)
+        if form.is_valid():
+            search_result = form.search()
+    else:
+        form = DictionaryForm()
+    return render(request, 'User/oxford.html', {'form': form, 'search_result': search_result})

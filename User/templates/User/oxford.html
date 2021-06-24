@@ -20,12 +20,10 @@
   <div class="header__menu">
     <nav id="navbar" class="header__nav collapse">
       <ul class="header__elenco">
-        <li class="header__el"><a href="#" class="header__link">Home</a></li>
+        <li class="header__el"><a href="{% url 'user-home' %}" class="header__link">Home</a></li>
         <li class="header__el"><a href="{% url 'profile' %}" class="header__link">Profile</a></li>
         <li class="header__el"><a href="{% url 'user-gmail' %}" class="header__link">Gmail</a></li>
-          <li class="header__el"><a href="{% url 'user-facebook' %}" class="header__link">Facebook</a></li>
-        <li class="header__el"><a href="{% url 'user-oxford' %}" class="header__link">Oxford</a></li>
-
+                  <li class="header__el"><a href="{% url 'user-facebook' %}" class="header__link">Facebook</a></li>
         <li class="header__el header__el--blue"><a href="{% url 'user-logout' %}" class="btn btn--white">Logout →</a></li>
       </ul>
     </nav>
@@ -38,10 +36,37 @@
     <div class="row">
       <div class="col-md-12">
     <div class="site">
-      <h1 class="site__title">Hello {{request.user}}</h1>
-      <h2 class="site__subtitle">Welcome to the website</h2>
 
-      <img class="site__img" src="https://image.ibb.co/c7grYb/image3015.png">
+     <h2>Oxford Dictionary</h2>
+
+  <form method="get">
+    {{ form.as_p }}
+    <button type="submit">search</button>
+  </form>
+
+  {% if search_result %}
+    <hr>
+    {% if search_result.success %}
+      {% for result in search_result.results %}
+        <h3>{{ result.word }}</h3>
+        {% for lexicalentry in result.lexicalEntries %}
+
+          <ul>
+            {% for entry in lexicalentry.entries %}
+              {% for sense in entry.senses %}
+                {% for definition in sense.definitions %}
+                  <li>{{ definition }}</li>
+                {% endfor %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      {% endfor %}
+    {% else %}
+      <p><em>{{ search_result.message }}</em></p>
+    {% endif %}
+  {% endif %}
+
     </div>
     </div>
     </div>

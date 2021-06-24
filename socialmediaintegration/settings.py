@@ -169,5 +169,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sinhashubham1911@gmail.com'
 EMAIL_HOST_PASSWORD = 'University@2020'
-
+OXFORD_APP_ID='b27749f2'
+OXFORD_APP_KEY='45465849bd8df7f7595cf358fb6de908'
 django_on_heroku.settings(locals())
