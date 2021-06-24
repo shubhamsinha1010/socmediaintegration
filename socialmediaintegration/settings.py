@@ -140,11 +140,12 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTHENTICATION_BACKENDS = [
+AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend'
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
 
-]
+)
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': [
@@ -171,4 +172,6 @@ EMAIL_HOST_USER = 'sinhashubham1911@gmail.com'
 EMAIL_HOST_PASSWORD = 'University@2020'
 OXFORD_APP_ID='b27749f2'
 OXFORD_APP_KEY='45465849bd8df7f7595cf358fb6de908'
+SOCIAL_AUTH_FACEBOOK_KEY = '953427408547257'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '0daca1189d8231fc951bb5ac2ec88a2f'  # App Secret
 django_on_heroku.settings(locals())
