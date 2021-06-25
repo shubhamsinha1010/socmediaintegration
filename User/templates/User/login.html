@@ -19,7 +19,10 @@
 					<input type="submit" value="LOGIN">
 				</form>
 				<p>Don't have an Account? <a href="{% url 'user-register' %}"> Register Now!</a></p>
-				 <a href="{% provider_login_url 'google' %}">Login With Google</a>
+				<div class="login-box">
+				<a href="{% provider_login_url 'google' %}" class="social-button" id="google-connect"> <span>Connect with Google</span></a>
+<!--				 <a href="{% provider_login_url 'google' %}">Login With Google</a>-->
+					</div>
 				<br>
 				    <a href="{% provider_login_url 'github' %}" class="btn btn-secondary">
       				<i class="fa fa-github fa-fw"></i>
