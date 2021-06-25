@@ -1,22 +1,14 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.forms import UserCreationForm
-# Create your views here.
 from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm
 from .models import Profile,UserNew,gmailNew
 from django.conf import settings
+import requests
+from isodate import parse_duration
 from django.core.mail import send_mail
-
-from django.contrib import messages
-from django.contrib import messages
-from django.contrib.auth import authenticate,login,logout
-
-from django.contrib.auth.forms import UserCreationForm
-
 from django.contrib.auth import authenticate, login, logout
-
 from django.contrib import messages
-
 from django.contrib.auth.decorators import login_required
+
 def register(request):
     form = CreateUserForm()
     if request.method=='POST':
@@ -33,31 +25,6 @@ def register(request):
         else:
             form = CreateUserForm()
     return render(request,'User/register.html',{'form': form})
-
-# def register(request):
-#     form = CreateUserForm()
-#     if request.method=='POST':
-#         form = CreateUserForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             messages.success(request, f'Your account has been created! You are now able to log in')
-#             return redirect('user-login')
-#         else:
-#             form = CreateUserForm()
-#     return render(request,'User/register.html',{'form': form})
-
-# def loginUser(request):
-#     if request.method=='POST':
-#         username=request.POST.get('username')
-#         password=request.POST.get('password')
-#         user = authenticate(request,username=username,password=password)
-#         if user is not None:
-#             login(request,user)
-#             return redirect('user-home')
-#         else:
-#             messages.info(request,"Username or password is incorrect")
-#
-#     return render(request,'User/login.html')
 
 def loginUser(request):
 	if request.user.is_authenticated:
@@ -153,3 +120,59 @@ def oxford(request):
     else:
         form = DictionaryForm()
     return render(request, 'User/oxford.html', {'form': form, 'search_result': search_result})
+
+
+def youtubeview(request):
+    videos = []
+
+    if request.method == 'POST':
+        search_url = 'https://www.googleapis.com/youtube/v3/search'
+        video_url = 'https://www.googleapis.com/youtube/v3/videos'
+
+        search_params = {
+            'part': 'snippet',
+            'q': request.POST['search'],
+            'key': settings.YOUTUBE_DATA_API_KEY,
+            'maxResults': 9,
+            'type': 'video'
+        }
+
+        r = requests.get(search_url, params=search_params)
+
+        results = r.json()['items']
+
+        video_ids = []
+        for result in results:
+            video_ids.append(result['id']['videoId'])
+
+        if request.POST['submit'] == 'lucky':
+            return redirect(f'https://www.youtube.com/watch?v={video_ids[0]}')
+
+        video_params = {
+            'key': settings.YOUTUBE_DATA_API_KEY,
+            'part': 'snippet,contentDetails',
+            'id': ','.join(video_ids),
+            'maxResults': 9
+        }
+
+        r = requests.get(video_url, params=video_params)
+
+        results = r.json()['items']
+
+        for result in results:
+            video_data = {
+                'title': result['snippet']['title'],
+                'id': result['id'],
+                'url': f'https://www.youtube.com/watch?v={result["id"]}',
+                'duration': int(parse_duration(result['contentDetails']['duration']).total_seconds() // 60),
+                'thumbnail': result['snippet']['thumbnails']['high']['url']
+            }
+
+            videos.append(video_data)
+
+    context = {
+        'videos': videos
+    }
+
+    return render(request, 'User/youtube.html', context)
+
