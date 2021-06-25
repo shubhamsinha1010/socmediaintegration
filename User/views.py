@@ -121,7 +121,7 @@ def oxford(request):
         form = DictionaryForm()
     return render(request, 'User/oxford.html', {'form': form, 'search_result': search_result})
 
-
+@login_required
 def youtubeview(request):
     videos = []
 
