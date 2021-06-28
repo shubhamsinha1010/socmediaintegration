@@ -19,14 +19,14 @@
 					<input type="submit" value="LOGIN">
 				</form>
 				<p>Don't have an Account? <a href="{% url 'user-register' %}"> Register Now!</a></p>
-				 <a href="{% provider_login_url 'google' %}">Login With Google</a>
+				 <a href="{% provider_login_url 'google' %}" class="socdes">Login With Google</a>
 				<br>
-				    <a href="{% provider_login_url 'github' %}" class="btn btn-secondary">
+				    <a href="{% provider_login_url 'github' %}" class="btn btn-secondary socdes">
       				<i class="fa fa-github fa-fw"></i>
       				<span>Login with GitHub</span>
     				</a>
 
-				<p>Don't Remember your Password?<br><a href="{% url 'password_reset' %}"> Forgot Password</a></p>
+				<p class="pdes">Don't Remember your Password?<br><a href="{% url 'password_reset' %}"> Forgot Password</a></p>
 			</div>
 		</div>
 
