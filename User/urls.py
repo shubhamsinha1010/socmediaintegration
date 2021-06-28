@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import register,loginUser,logoutUser,home,profile,gmailus,facebookus,oxford,youtubeview
+from .views import register,loginUser,logoutUser,home,profile,facebookus,oxford,youtubeview,EmailAttachementView
 from django.contrib.auth import views as auth_views
+
 urlpatterns = [
 
 path('', loginUser,name="user-login"),
@@ -8,7 +9,7 @@ path('register/', register,name="user-register"),
 path('home/', home,name="user-home"),
 path('logout/',logoutUser,name="user-logout"),
 path('profile/', profile, name='profile'),
-path('gmail/', gmailus, name='user-gmail'),
+path('gmail', EmailAttachementView.as_view(), name='emailattachment'),
 path('oxford/', oxford, name='user-oxford'),
 path('youtube/', youtubeview, name='user-youtube'),
 path('facebook/', facebookus, name='user-facebook'),

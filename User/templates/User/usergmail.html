@@ -22,7 +22,7 @@
       <ul class="header__elenco">
         <li class="header__el"><a href="{% url 'user-home' %}" class="header__link">Home</a></li>
         <li class="header__el"><a href="{% url 'profile' %}" class="header__link">Profile</a></li>
-        <li class="header__el"><a href="{% url 'user-gmail' %}" class="header__link">Gmail</a></li>
+        <li class="header__el"><a href="{% url 'emailattachment' %}" class="header__link">Gmail</a></li>
                   <li class="header__el"><a href="{% url 'user-facebook' %}" class="header__link">Facebook</a></li>
         <li class="header__el"><a href="{% url 'user-oxford' %}" class="header__link">Oxford</a></li>
            <li class="header__el"><a href="{% url 'user-youtube' %}" class="header__link">Youtube</a></li>
@@ -38,13 +38,28 @@
     <div class="row">
       <div class="col-md-12">
     <div class="site">
-        		{% for message in messages %}
-				<p style="text-align:center;" class="messages">{{message}}</p>
-			{% endfor %}
-   <form method="POST" action="">
-       {% csrf_token %}
-     {{form.as_p}}
-  <button type="submit" class="btn btn-primary">Submit</button>
+<!--        		{% for message in messages %}-->
+<!--				<p style="text-align:center;" class="messages">{{message}}</p>-->
+<!--			{% endfor %}-->
+<!--   <form method="POST" action="">-->
+<!--       {% csrf_token %}-->
+<!--     {{form.as_p}}-->
+<!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+                <h1 class="mt-5 mb-3">Django Email Attachment</h1>
+
+          {% if error_message %}
+          <div class="alert alert-primary" role="alert">
+            {{error_message}}
+          </div>
+          {% endif %}
+
+          {% if email_form %}
+          <form method="POST" action ="" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{email_form|crispy}}
+          <button type="submit" class="btn btn-primary">Send Email</button>
+          </form>
+          {% endif %}
 </form>
 
 

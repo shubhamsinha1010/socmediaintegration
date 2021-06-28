@@ -40,6 +40,8 @@ class registgmail(forms.Form):
     email = forms.EmailField(error_messages={'required': 'Enter your Email'})
     subject = forms.CharField(error_messages={'required': 'Enter your Subject'})
     message = forms.CharField(error_messages={'required': 'Enter the Message'})
+    attach = forms.FileField(widget=forms.ClearableFileInput(attrs={'multiple': True}))
+
 
 
 class DictionaryForm(forms.Form):

@@ -1,8 +1,10 @@
 from django.shortcuts import render,redirect
-from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm
+from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm,registgmail
 from .models import Profile,UserNew,gmailNew
 from django.conf import settings
 import requests
+from django.core.mail import EmailMessage
+from django.views import View
 from isodate import parse_duration
 from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
@@ -99,24 +101,59 @@ def profile(request):
 
     return render(request, 'User/profile.html', context)
 
-@login_required
-def gmailus(request):
-    form = gmailUserForm()
-    if request.method=="POST":
-        form = gmailUserForm(request.POST)
-        if form.is_valid():
-            emal = form.cleaned_data['email']
-            subj = form.cleaned_data['subject']
-            msgs = form.cleaned_data['message']
-            regs = gmailNew(email=emal,subject=subj,message=msgs)
-            regs.save()
-            form.save()
-            send_mail(subj,msgs,settings.EMAIL_HOST_USER,[emal],fail_silently=False)
-            messages.success(request, f'The email is sent successfully')
-        else:
-            form = gmailUserForm()
+# @login_required
+# def gmailus(request):
+#     form = gmailUserForm()
+#     if request.method=="POST":
+#         form = gmailUserForm(request.POST)
+#         if form.is_valid():
+#             emal = form.cleaned_data['email']
+#             subj = form.cleaned_data['subject']
+#             msgs = form.cleaned_data['message']
+#             regs = gmailNew(email=emal,subject=subj,message=msgs)
+#             regs.save()
+#             form.save()
+#             send_mail(subj,msgs,settings.EMAIL_HOST_USER,[emal],fail_silently=False)
+#             messages.success(request, f'The email is sent successfully')
+#         else:
+#             form = gmailUserForm()
+#
+#     return render(request,'User/usergmail.html',{'form':form})
 
-    return render(request,'User/usergmail.html',{'form':form})
+
+class EmailAttachementView(View):
+    form_class = registgmail
+    template_name = 'User/usergmail.html'
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class()
+        return render(request, self.template_name, {'email_form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST, request.FILES)
+
+        if form.is_valid():
+
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            email = form.cleaned_data['email']
+            files = request.FILES.getlist('attach')
+            regs = gmailNew(email=email, subject=subject, message=message)
+            regs.save()
+
+            try:
+                mail = EmailMessage(subject, message, settings.EMAIL_HOST_USER, [email])
+                for f in files:
+                    mail.attach(f.name, f.read(), f.content_type)
+                mail.send()
+                return render(request, self.template_name,
+                              {'email_form': form, 'error_message': 'Sent email to %s' % email})
+            except:
+                return render(request, self.template_name,
+                              {'email_form': form, 'error_message': 'Either the attachment is too big or corrupt'})
+
+        return render(request, self.template_name,
+                      {'email_form': form, 'error_message': 'Unable to send email. Please try again later'})
 
 
 @login_required
