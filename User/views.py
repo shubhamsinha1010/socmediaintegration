@@ -17,13 +17,26 @@ def register(request):
             usnm = form.cleaned_data['username']
             eml = form.cleaned_data['email']
             pswd = form.cleaned_data['password1']
+
             reg = UserNew(username = usnm,email = eml,password = pswd)
             reg.save()
             form.save()
             messages.success(request, f'Your account has been created! You are now able to log in')
             return redirect('user-login')
         else:
-            form = CreateUserForm()
+            pswd = request.POST.get('password1')
+            pdss = request.POST.get('password2')
+            if pswd!=pdss:
+                messages.success(request, f'The passwords dont match')
+                form = CreateUserForm()
+            elif len(pswd)<8:
+                messages.success(request, f'The password must be greater than 8 and must include numbers')
+                form = CreateUserForm()
+
+            else:
+                messages.success(request, f'The password cannot be entirely numeric')
+                form = CreateUserForm()
+
     return render(request,'User/register.html',{'form': form})
 
 def loginUser(request):

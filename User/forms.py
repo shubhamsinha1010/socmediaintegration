@@ -34,7 +34,7 @@ class gmailUserForm(forms.ModelForm):
 class regist(forms.Form):
     name = forms.CharField(error_messages={'required':'Enter your Username'})
     email = forms.EmailField(error_messages={'required': 'Enter your Email'})
-    password = forms.CharField(widget=forms.PasswordInput,error_messages={'required': 'Enter your Password'})
+    password = forms.CharField(widget=forms.PasswordInput,error_messages={'required': 'Enter your Password'},min_length=8,max_length=25)
 
 class registgmail(forms.Form):
     email = forms.EmailField(error_messages={'required': 'Enter your Email'})

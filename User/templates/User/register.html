@@ -5,6 +5,10 @@
 		<h1>Social Media Integration</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
+					{% for message in messages %}
+				<p style="text-align:center;" class="messages">{{message}}</p>
+			{% endfor %}
+
 				<form method="POST">
 					{% csrf_token %}
 					{{form.username.label}}
@@ -18,7 +22,7 @@
 					<input type="submit" value="SIGNUP">
 
 				</form>
-				{{form.errors}}
+
 				<p>Already have an Account? <a href="{% url 'user-login' %}"> Login Now!</a></p>
 			</div>
 		</div>
