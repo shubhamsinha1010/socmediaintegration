@@ -226,3 +226,34 @@ def youtubeview(request):
 
     return render(request, 'User/youtube.html', context)
 
+
+@login_required
+def instagramview(request):
+    resultlist = []
+    if request.method == 'POST':
+        url = "https://easy-instagram-service.p.rapidapi.com/username"
+
+        querystring = {"username": request.POST['search'], "random": "x8n3nsj2"}
+
+        headers = {
+            'x-rapidapi-key': "df12ad1e08msh6d8d43e4dbeb269p1e73bcjsn642e41041d36",
+            'x-rapidapi-host': "easy-instagram-service.p.rapidapi.com"
+        }
+
+        response = requests.request("GET", url, headers=headers, params=querystring)
+        results = response.json()
+        resultdicts = {
+            'full_name': results["full_name"],
+            'biography': results["biography"],
+            'total_post': results["total_post"],
+            'is_verified': results["is_verified"]
+        }
+
+        resultlist.append(resultdicts)
+
+        context = {
+            'resultlist': resultlist
+        }
+
+        return render(request,'User/userinstragram.html', context)
+
