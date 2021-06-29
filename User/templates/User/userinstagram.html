@@ -43,19 +43,23 @@
 
       </p>
       </form>
+            <div>
+        {% for insta in resultlist  %}
+        <div>Full Name-{{insta.full_name}}</div>
+        <div>Insta Bio-{{insta.biography}}</div>
+        <div>Followers-{{insta.followers}}</div>
+        <div>Following-{{insta.following}}</div>
+        <div>Total Posts-{{insta.totalposts}}</div>
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ insta.profilepic }}" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+
+        {% endfor %}
+      </div>
     </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
-      <div class="row">
-        {% for insta in resultlist  %}
-          {{insta.full_name}}
-          {{insta.biography}}
-          {{insta.total_post}}
-          {{insta.is_verified}}
-        {% endfor %}
-      </div>
+
     </div>
   </div>
 

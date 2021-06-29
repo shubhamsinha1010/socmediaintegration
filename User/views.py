@@ -231,29 +231,32 @@ def youtubeview(request):
 def instagramview(request):
     resultlist = []
     if request.method == 'POST':
-        url = "https://easy-instagram-service.p.rapidapi.com/username"
+        url = "https://instagram-data1.p.rapidapi.com/user/info"
 
-        querystring = {"username": request.POST['search'], "random": "x8n3nsj2"}
+        querystring = {"username":request.POST['search']}
 
         headers = {
-            'x-rapidapi-key': "df12ad1e08msh6d8d43e4dbeb269p1e73bcjsn642e41041d36",
-            'x-rapidapi-host': "easy-instagram-service.p.rapidapi.com"
+            'x-rapidapi-key': "efeeef677cmshae5edb65a989979p185378jsnd6957fa89188",
+            'x-rapidapi-host': "instagram-data1.p.rapidapi.com"
         }
 
         response = requests.request("GET", url, headers=headers, params=querystring)
         results = response.json()
         resultdicts = {
+            'username': results["username"],
+            'totalposts': results["edge_owner_to_timeline_media"]["count"],
             'full_name': results["full_name"],
             'biography': results["biography"],
-            'total_post': results["total_post"],
-            'is_verified': results["is_verified"]
+            'followers': results["edge_followed_by"]["count"],
+            'following': results["edge_follow"]["count"],
+            'profilepic': results["profile_pic_url"]
         }
 
         resultlist.append(resultdicts)
 
-        context = {
+    context = {
             'resultlist': resultlist
         }
 
-        return render(request,'User/userinstragram.html', context)
+    return render(request,'User/userinstagram.html', context)
 
