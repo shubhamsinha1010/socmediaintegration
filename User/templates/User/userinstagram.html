@@ -23,11 +23,33 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="{% static 'User/youtube.css' %}" rel="stylesheet">
+    <link href="{% static 'User/home.css' %}" rel="stylesheet">
   </head>
   <body>
+<header class="header">
+  <div class="container header__container">
+<div class="header__logo"><img class="header__img" src="https://image.ibb.co/kcVou6/path3000.png"> <h1 class="header__title">Social Media Integration</span></h1></div>
 
-<main role="main">
+
+
+  <div class="header__menu">
+    <nav id="navbar" class="header__nav collapse">
+      <ul class="header__elenco">
+        <li class="header__el"><a href="{% url 'user-home' %}" class="header__link">Home</a></li>
+        <li class="header__el"><a href="{% url 'profile' %}" class="header__link">Profile</a></li>
+        <li class="header__el"><a href="{% url 'emailattachment' %}" class="header__link">Gmail</a></li>
+                  <li class="header__el"><a href="{% url 'user-facebook' %}" class="header__link">Facebook</a></li>
+        <li class="header__el"><a href="{% url 'user-oxford' %}" class="header__link">Oxford</a></li>
+         <li class="header__el"><a href="{% url 'user-youtube' %}" class="header__link">Youtube</a></li>
+        <li class="header__el"><a href="{% url 'user-instagram' %}" class="header__link">Instagram</a></li>
+        <li class="header__el header__el--blue"><a href="{% url 'user-logout' %}" class="btn btn--white">Logout →</a></li>
+      </ul>
+    </nav>
+  </div>
+    </div>
+</header>
+
+
 
   <section class="jumbotron text-center">
     <div class="container">
@@ -56,12 +78,6 @@
       </div>
     </div>
   </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-    </div>
-  </div>
 
 </main>
 </body>
