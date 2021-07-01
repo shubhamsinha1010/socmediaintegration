@@ -144,6 +144,7 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
 
 )
 SOCIALACCOUNT_PROVIDERS = {
@@ -175,5 +176,7 @@ OXFORD_APP_KEY='45465849bd8df7f7595cf358fb6de908'
 SOCIAL_AUTH_FACEBOOK_KEY = '953427408547257'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '0daca1189d8231fc951bb5ac2ec88a2f'
 YOUTUBE_DATA_API_KEY='AIzaSyDwd6KfcemGCK_0lXAlOEGKL_TgnQUmW4c'
+SOCIAL_AUTH_TWITTER_KEY = '96T5sgmPtOgNR5IJS8MDQbXgd'
+SOCIAL_AUTH_TWITTER_SECRET = 'HEBEbE6gbGcQwjkaZXsXueLQvL5RZnpya3ETDMAFhhssnfnA2u'
 # App Secret
 django_on_heroku.settings(locals())
