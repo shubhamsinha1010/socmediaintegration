@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+  <input type="text" placeholder="Tweet from here" name="search">
+  <button type="submit">Submit</button>
+
+</form>
+
+          <div class="alert alert-primary" role="alert">
+            {{error_message}}
+          </div>
+</body>
+</html>

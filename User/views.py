@@ -10,6 +10,7 @@ from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+import tweepy
 
 def register(request):
     form = CreateUserForm()
@@ -260,3 +261,25 @@ def instagramview(request):
 
     return render(request,'User/userinstagram.html', context)
 
+consumer_key='EiCnJUUwjRaCTUaC4vLVagrzu'
+consumer_secret='nDBopQND1OedNHCjBHJS27QrFujNxmPKkEtzCzroOFPW7UuVxc'
+access_token='1392787081957715976-Xhz8anBqz8qIuKrvckYA9UVvkIqTnz'
+access_token_secret='Uk6Tah0TKd8EVgeEtRaWR1YhUTzhnubFwkvSqldfVAp69'
+
+
+def OAuth():
+    try:
+        auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
+        auth.set_access_token(access_token,access_token_secret)
+        return auth
+
+    except Exception as e:
+        return None
+
+def tweetapi(request):
+    if request.method=='POST':
+        oauth = OAuth()
+        api = tweepy.API(oauth)
+        api.update_status(request.POST['search'])
+
+    return render(request,'User/twittertweet.html',{'error_message': 'The tweet has been posted'})

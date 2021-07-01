@@ -65,3 +65,7 @@ class DictionaryForm(forms.Form):
             else:
                 result['message'] = 'The Oxford API is not available at the moment. Please try again later.'
         return result
+
+
+class TwitterForm(forms.Form):
+    tweet = forms.CharField(max_length=100)
