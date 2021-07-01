@@ -32,3 +32,7 @@ class gmailNew(models.Model):
     email = models.EmailField(max_length=70)
     subject = models.CharField(max_length=70)
     message = models.CharField(max_length=70)
+
+
+class twitterNew(models.Model):
+    usertweet = models.CharField(max_length=100)

@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm,registgmail
-from .models import Profile,UserNew,gmailNew
+from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm,registgmail,twitterUserForm
+from .models import Profile,UserNew,gmailNew,twitterNew
 from django.conf import settings
 import requests
 from django.core.mail import EmailMessage
@@ -277,9 +277,20 @@ def OAuth():
         return None
 
 def tweetapi(request):
+    form = twitterUserForm()
     if request.method=='POST':
+        form = twitterUserForm(request.POST)
         oauth = OAuth()
         api = tweepy.API(oauth)
         api.update_status(request.POST['search'])
 
-    return render(request,'User/twittertweet.html',{'error_message': 'The tweet has been posted'})
+        if form.is_valid():
+
+            twt = form.cleaned_data['usertweet']
+            dfsc = twitterNew(usertweet=twt)
+            dfsc.save()
+            form.save()
+
+
+
+    return render(request,'User/twittertweet.html',{'error_message': 'The tweet has been posted','email_forme':form})

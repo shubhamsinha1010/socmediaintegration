@@ -2,7 +2,7 @@ from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.contrib.auth.models import User
-from .models import Profile,gmailNew
+from .models import Profile,gmailNew,twitterNew
 from django.conf import settings
 import requests
 
@@ -30,6 +30,11 @@ class gmailUserForm(forms.ModelForm):
     class Meta:
         model = gmailNew
         fields = ['email','subject','message']
+
+class twitterUserForm(forms.ModelForm):
+    class Meta:
+        model = twitterNew
+        fields = ['usertweet']
 
 class regist(forms.Form):
     name = forms.CharField(error_messages={'required':'Enter your Username'})
