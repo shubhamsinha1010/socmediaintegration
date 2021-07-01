@@ -237,7 +237,7 @@ def instagramview(request):
         querystring = {"username":request.POST['search']}
 
         headers = {
-            'x-rapidapi-key': "efeeef677cmshae5edb65a989979p185378jsnd6957fa89188",
+            'x-rapidapi-key': "fd35b667f9msh57ee2fc0aac17f7p16e3f1jsn6ceffcd0d8c7",
             'x-rapidapi-host': "instagram-data1.p.rapidapi.com"
         }
 
@@ -290,7 +290,8 @@ def tweetapi(request):
             dfsc = twitterNew(usertweet=twt)
             dfsc.save()
             form.save()
+            messages.success(request, f'Your tweet has been posted')
 
 
 
-    return render(request,'User/twittertweet.html',{'error_message': 'The tweet has been posted','email_forme':form})
+    return render(request,'User/twittertweet.html',{'email_forme':form})
