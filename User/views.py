@@ -6,7 +6,6 @@ import requests
 from django.core.mail import EmailMessage
 from django.views import View
 from isodate import parse_duration
-from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -101,26 +100,6 @@ def profile(request):
     }
 
     return render(request, 'User/profile.html', context)
-
-# @login_required
-# def gmailus(request):
-#     form = gmailUserForm()
-#     if request.method=="POST":
-#         form = gmailUserForm(request.POST)
-#         if form.is_valid():
-#             emal = form.cleaned_data['email']
-#             subj = form.cleaned_data['subject']
-#             msgs = form.cleaned_data['message']
-#             regs = gmailNew(email=emal,subject=subj,message=msgs)
-#             regs.save()
-#             form.save()
-#             send_mail(subj,msgs,settings.EMAIL_HOST_USER,[emal],fail_silently=False)
-#             messages.success(request, f'The email is sent successfully')
-#         else:
-#             form = gmailUserForm()
-#
-#     return render(request,'User/usergmail.html',{'form':form})
-
 
 class EmailAttachementView(View):
     form_class = registgmail
