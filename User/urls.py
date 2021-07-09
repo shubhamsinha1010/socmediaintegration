@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import register,loginUser,logoutUser,home,profile,facebookus,oxford,youtubeview,EmailAttachementView,instagramview,tweetapi
+from .views import register,loginUser,logoutUser,home,profile,facebookus,oxford,youtubeview,EmailAttachementView,instagramview,tweetapi,\
+    fbauto,autfunc
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -20,5 +21,7 @@ path('tweet/',tweetapi,name="user-twitter"),
 # path('password-reset/',passwordreset,name="password-reset"),
 # path('password-reset/done/',passwordresetdone,name="password-reset-done"),
 # path('password-reset-confirm/<uidb64>/<token>/',passwordresetconfirm,name="password-reset-confirm"),
+path('fbposts/',autfunc,name="user-autos"),
+path('fbpost/',fbauto,name="user-auto")
 
 ]

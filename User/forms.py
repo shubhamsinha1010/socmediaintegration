@@ -1,7 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.contrib.auth.models import User
-from .models import Profile,gmailNew,twitterNew
+from .models import Profile,gmailNew,twitterNew,fbautoNew
 from django.conf import settings
 import requests
 
@@ -34,6 +34,12 @@ class twitterUserForm(forms.ModelForm):
     class Meta:
         model = twitterNew
         fields = ['usertweet']
+
+class autofacebookUserForm(forms.ModelForm):
+    class Meta:
+        model = fbautoNew
+        fields = ['faceuser','facepassword','facepath','facecaption']
+
 
 class regist(forms.Form):
     name = forms.CharField(error_messages={'required':'Enter your Username'})
@@ -73,3 +79,11 @@ class DictionaryForm(forms.Form):
 
 class TwitterForm(forms.Form):
     tweet = forms.CharField(max_length=100)
+
+
+class FacebookAutoForm(forms.Form):
+    fbusername = forms.CharField(error_messages={'required': 'Enter the username'})
+    fbpassword = forms.CharField(widget=forms.PasswordInput, error_messages={'required': 'Enter your Password'},
+                               min_length=8, max_length=25)
+    imagepath = forms.ImageField(error_messages={'required': 'Enter the imagepath'})
+    caption = forms.CharField(error_messages={'required': 'Enter the caption'})

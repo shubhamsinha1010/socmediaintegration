@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,gmailUserForm,DictionaryForm,registgmail,twitterUserForm
-from .models import Profile,UserNew,gmailNew,twitterNew
+from .forms import CreateUserForm,UserUpdateForm, ProfileUpdateForm,DictionaryForm,registgmail,twitterUserForm,autofacebookUserForm
+from .models import Profile,UserNew,gmailNew,twitterNew,fbautoNew
 from django.conf import settings
 import requests
 from django.core.mail import EmailMessage
@@ -10,6 +10,10 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 import tweepy
+from selenium import webdriver
+from time import sleep
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.common.exceptions import ElementClickInterceptedException
 
 def register(request):
     form = CreateUserForm()
@@ -274,3 +278,98 @@ def tweetapi(request):
 
 
     return render(request,'User/twittertweet.html',{'email_forme':form})
+
+
+def fbauto(request):
+    form = autofacebookUserForm()
+    if request.method=='POST':
+        form = autofacebookUserForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['faceuser']
+            password = form.cleaned_data['facepassword']
+            caption = form.cleaned_data['facecaption']
+            image_path = form.cleaned_data['myfile']
+            print(image_path)
+
+
+            dser = fbautoNew(faceuser=username,facepassword=password,facecaption=caption,facepath=image_path)
+            options = FirefoxOptions()
+            options.add_argument("--headless")
+            driver = webdriver.Firefox(
+                executable_path='/home/shubham/Downloads/geckodriver-v0.29.1-linux64/geckodriver', options=options)
+
+            driver.get('https://www.facebook.com')
+            driver.maximize_window()
+            driver.find_element_by_xpath('.//*[@id="email"]').send_keys('hackerop.bolte')
+            driver.find_element_by_xpath('.//*[@id="pass"]').send_keys('univity2020')
+            driver.find_element_by_name('login').click()
+            sleep(7)
+            driver.find_element_by_class_name('oajrlxb2.b3i9ofy5.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.nhd2j8a9.j83agx80.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.cxgpxx05.d1544ag0.sj5x9vvc.tw6a2znq.i1ao9s8h.esuyzwwr.f1sip0of.lzcic4wl.l9j0dhe7.abiwlrkh.p8dawk7l.bp9cbjyn.orhb3f3m.czkt41v7.fmqxjp7s.emzo65vh.btwxx1t3.buofh1pr.idiwt2bm.jifvfom9.kbf60n1y')
+            try:
+                fjdkf = driver.find_element_by_class_name('m9osqain.a5q79mjw.gy2v8mqq.jm1wdb64.k4urcfbm.qv66sw1b')
+                fjif = fjdkf.find_element_by_class_name('a8c37x1j.ni8dbmo4.stjgntxs.l9j0dhe7')
+                fjif.click()
+                sleep(7)
+            except Exception as error:
+                print("Error")
+
+
+            fsdf = driver.find_element_by_class_name('notranslate._5rpu')
+
+            fsdf.send_keys('hellloooo')
+            sleep(9)
+            driver.find_element_by_css_selector('div[aria-label="Photo/Video"]').click()
+            sleep(9)
+            driver.find_element_by_xpath(
+                '/html/body/div[1]/div/div[1]/div/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div/div[1]/div/div/input').send_keys('/home/shubham/socialmediaintegration/socialmediaintegration/media/default.jpg')
+            sleep(12)
+            postbtn = driver.find_elements_by_tag_name('span')
+            for i in postbtn:
+                if i.text == 'Post':
+                    i.click()
+            form.save()
+            dser.save()
+            driver.quit()
+
+    return render(request,'User/facebookautomation.html',{'email_forms':form})
+
+
+
+
+
+def autfunc(request):
+    options = FirefoxOptions()
+    options.add_argument("--headless")
+    driver=webdriver.Firefox(executable_path='/home/shubham/Downloads/geckodriver-v0.29.1-linux64/geckodriver',options=options)
+    driver.get('https://www.facebook.com')
+
+    username='hackerop.bolte'
+    password='university2020'
+
+    driver.find_element_by_xpath('.//*[@id="email"]').send_keys(username)
+    driver.find_element_by_xpath('.//*[@id="pass"]').send_keys(password)
+    driver.find_element_by_name('login').click()
+    sleep(11)
+    driver.find_element_by_class_name('oajrlxb2.b3i9ofy5.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.nhd2j8a9.j83agx80.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.cxgpxx05.d1544ag0.sj5x9vvc.tw6a2znq.i1ao9s8h.esuyzwwr.f1sip0of.lzcic4wl.l9j0dhe7.abiwlrkh.p8dawk7l.bp9cbjyn.orhb3f3m.czkt41v7.fmqxjp7s.emzo65vh.btwxx1t3.buofh1pr.idiwt2bm.jifvfom9.kbf60n1y')
+    try:
+        fjdkf = driver.find_element_by_class_name('m9osqain.a5q79mjw.gy2v8mqq.jm1wdb64.k4urcfbm.qv66sw1b')
+        fjif = fjdkf.find_element_by_class_name('a8c37x1j.ni8dbmo4.stjgntxs.l9j0dhe7')
+        fjif.click()
+        sleep(11)
+    except ElementClickInterceptedException as exception:
+        pass
+    fsdf = driver.find_element_by_class_name('notranslate._5rpu')
+    fsdf.send_keys('helooo')
+    sleep(9)
+    driver.find_element_by_css_selector('div[aria-label="Photo/Video"]').click()
+    sleep(7)
+    image_path = '/home/shubham/Desktop/large_rbSbk8j.jpg'
+    alabas = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div/div/div[2]/div[1]/div[2]/div/div[1]/div/div/input')
+    alabas.send_keys(image_path)
+    sleep(9)
+    postbtn = driver.find_elements_by_tag_name('span')
+    for i in postbtn:
+         if i.text=='Post':
+            i.click()
+
+

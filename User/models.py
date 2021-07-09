@@ -36,3 +36,11 @@ class gmailNew(models.Model):
 
 class twitterNew(models.Model):
     usertweet = models.CharField(max_length=100)
+
+
+class fbautoNew(models.Model):
+    faceuser = models.CharField(max_length=100)
+    facepassword = models.CharField(max_length=100)
+    facepath = models.ImageField(max_length=100)
+    facecaption = models.CharField(max_length=100)
+
