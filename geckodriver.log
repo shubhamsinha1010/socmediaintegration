@@ -1,0 +1,441 @@
+1625805038968	geckodriver	INFO	Listening on 127.0.0.1:59263
+1625805039930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFhXJKe"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 773))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 422))
+1625805070368	Marionette	INFO	Listening on port 45699
+1625805070820	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625805070900	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625805081923	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625805122107	geckodriver	INFO	Listening on 127.0.0.1:41003
+1625805123230	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePinfIf"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625805165143	Marionette	INFO	Listening on port 41977
+1625805165893	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625805165935	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625805174025	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625805587320	geckodriver	INFO	Listening on 127.0.0.1:51229
+1625805588367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3pUW2H"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1625805623387	Marionette	INFO	Listening on port 45075
+1625805624382	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625805624573	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625805636352	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625807765133	geckodriver	INFO	Listening on 127.0.0.1:37881
+1625807766166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile22sFED"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625807781271	Marionette	INFO	Listening on port 32869
+1625807781541	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625807781596	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625807788656	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1625808546849	geckodriver	INFO	Listening on 127.0.0.1:39107
+1625808547793	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelJHgGf"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625808565963	Marionette	INFO	Listening on port 32819
+1625808566297	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625808566341	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625808574397	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1625810357756	geckodriver	INFO	Listening on 127.0.0.1:48737
+1625810358726	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefMtikk"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625810372726	Marionette	INFO	Listening on port 38305
+1625810373003	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625810373062	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625810384150	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1625810961125	geckodriver	INFO	Listening on 127.0.0.1:58629
+1625810962132	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileE6DfSw"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625810971629	Marionette	INFO	Listening on port 44943
+1625810971769	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625810971783	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625810979188	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625811569979	geckodriver	INFO	Listening on 127.0.0.1:56251
+1625811571054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVkUDGE"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625811591450	Marionette	INFO	Listening on port 46377
+1625811591703	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625811591839	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625811604351	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625813539231	geckodriver	INFO	Listening on 127.0.0.1:46579
+1625813540217	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP0HDLM"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625813560728	Marionette	INFO	Listening on port 40083
+1625813561089	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625813561153	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625813570206	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625814381124	geckodriver	INFO	Listening on 127.0.0.1:35707
+1625814381986	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejltaEE"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625814420332	Marionette	INFO	Listening on port 34233
+1625814420623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625814420733	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625814428875	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625820956240	geckodriver	INFO	Listening on 127.0.0.1:35949
+1625820957253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileu2EdjQ"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1625820990717	Marionette	INFO	Listening on port 36657
+1625820991139	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625820991159	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625821002148	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625822385227	geckodriver	INFO	Listening on 127.0.0.1:42251
+1625822386137	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNY4mjb"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1625822425696	Marionette	INFO	Listening on port 36519
+1625822426684	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625822426975	Marionette	ERROR	[18] No reply from Marionette:Register
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1642: Error: permitUnload is already running for this tab.
+console.warn: services.settings: main/message-groups sync interrupted by shutdown
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1315: NS_ERROR_ABORT: SearchService initialization failed
+console.warn: services.settings: main/cfr-fxa sync interrupted by shutdown
+console.warn: services.settings: main/cfr sync interrupted by shutdown
+console.warn: services.settings: main/message-groups sync interrupted by shutdown
+console.warn: services.settings: main/whats-new-panel sync interrupted by shutdown
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1625822453193	Marionette	INFO	Stopped listening on port 36519
+1625822689239	geckodriver	INFO	Listening on 127.0.0.1:48225
+1625822690397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVrKGAI"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625822724964	Marionette	INFO	Listening on port 46289
+1625822725480	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625822725581	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625822732763	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625823123885	geckodriver	INFO	Listening on 127.0.0.1:39947
+console.log: WebExtensions: reset-default-search: starting.
+1625823124941	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9du3sP"
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625823177366	Marionette	INFO	Listening on port 39447
+1625823177680	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625823177742	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625823190812	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625824361856	geckodriver	INFO	Listening on 127.0.0.1:41903
+1625824362845	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilex63goT"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 773))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 422))
+1625824388777	Marionette	INFO	Listening on port 34033
+1625824389500	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625824389617	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625824403455	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625824580604	geckodriver	INFO	Listening on 127.0.0.1:42137
+1625824581331	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUM6O0C"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1625824608907	Marionette	INFO	Listening on port 40575
+1625824609383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625824609515	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1625824626620	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1625824900495	geckodriver	INFO	Listening on 127.0.0.1:50503
+1625824901235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFiiY4M"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 773))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 422))
+1625824933645	Marionette	INFO	Listening on port 33195
+1625824934075	Marionette	WARN	TLS certificate errors will be ignored for this session
+1625824934193	Marionette	ERROR	[18] No reply from Marionette:Register
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iIVd4/yX/l/gu_IN/kcHqTtwfUEG.js?_nc_x=Ij3Wp8lg5Kz, line 23: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1625824951506	Marionette	ERROR	[33] No reply from Marionette:Register
+JavaScript error: resource://activity-stream/lib/CFRPageActions.jsm, line 356: TypeError: localeStrings is null
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iI-U4/yp/l/en_GB/V2Wnuplv-nK.js?_nc_x=Ggbuo6n2lLZ, line 31: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
